@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: #f5f5f5; /* Replace with Figma color */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px; /* Replace with Figma exact px */
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333; /* Replace with Figma color */
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.btn-primary {
+    text-decoration: none;
+    background-color: #ff6b6b; /* Replace with Figma button color */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff4c4c;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-title {
+        font-size: 64px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+}
